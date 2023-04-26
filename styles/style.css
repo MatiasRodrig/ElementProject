@@ -23,12 +23,13 @@ header {
     align-items: center;
     padding: 30px;
     width: 75%;
-
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .e-logo {
     display: flex;
     justify-content: space-between;
+    
 }
 
 
@@ -37,10 +38,13 @@ header {
     font-size: 28px;
     font-weight: bold;
     color: rgb(235, 235, 235);
+    background-color: transparent;
+    text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 #inicio .boton {
     background-color: #3F3F3F;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
     border: none;
     padding: 5px 10px;
     text-align: center;
@@ -66,6 +70,7 @@ header {
 
 .boton-ini {
     background-color: rgb(45, 46, 48);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
     border: none;
     color: 30, 30, 30;
     padding: 5px 10px;
@@ -103,15 +108,20 @@ header {
     align-items: center;
     text-align: center;
     color: #CCCCCC;
-    font-family: sans-serif;
+    font-family: 'Roboto'
 }
 
 #explora .texto-explora {
     color: #FFFF;
+    font-size: 1.1em;
+}
+
+#explora h1 {
+    margin-right: 70px;
 }
 
 #explora p {
-    font-size: 0.5em;
+    font-size: 0.6em;
     margin-top: 10px;
     margin-right: 20px;
     font-family: 'Montserrat';
@@ -134,41 +144,68 @@ header {
 }
 
 
-        .cards{
-            width: 75%;
-            margin: auto;
-            display: flex;
-           border: solid #676A5F;
-           background-color: #676A5F; /*Esto hay que eliminar cuando termines las cartas*/
-        }
-    
-        .card {
-            display: inline-block;
-            width: 23%;
-            margin: 1%;
-            border: 1px solid black;
-            text-align: center;
-        }
-    
-        .card img {
-            width: 100%;
-            height: 300px;
-            object-fit: contain;
-            margin-top: 1px;
-        }
-    
-        .card h1 {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-    
-        .card p {
-            font-size: 1em;
-            margin-top: 5px;
-        }
+.cards {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 1px;
+    padding-top: 20px;
+}
 
+.card {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    padding: 9px;
+    margin: 1%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(3, 32, 51, 0.8);
+    backdrop-filter: blur(1rem);
+    border: .1rem rgba(255, 255, 255, 0.18);
+    color: rgb(235, 235, 235);
+    overflow: hidden;
+}
 
+.card .card-image {
+    position: relative;
+    height: 0;
+    padding-bottom: 120%;
+    background: var(--i);
+    background-size: cover;
+}
 
+.card .content-card {
+    position: relative;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    transition: top 0.3s ease-in-out;
+    padding-bottom: 10px;
+}
+
+.card:hover .content-card {
+    top: 0;
+}
+
+.card h1 {
+    font-size: 1.5em;
+    margin-top: 18px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.card a:link,
+.card a:visited {
+    color: inherit;
+    text-decoration: none;
+}
 
 
 

@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +27,9 @@
     <header>
         <div id="inicio">
             <div class="e-logo">
-                <h1 class="logo">Element Project</h1>
+                <a href="javascript:location.reload()">
+                    <h1 class="logo">Element Project</h1>
+                </a>
                 <ul class="botones">
                     <li><a href="#inicio" class="boton-ini">Inicio</a></li>
                     <li><a href="#explora" class="boton">Explora</a></li>
@@ -40,50 +45,96 @@
     <main>
         <section class="hero">
             <div id="explora">
-                <h1 style="margin: 0;">
+                <h1>
                     <span class="texto-explora"> Explora nuestro </span>
-                    <br> <span style="background-color: #4B0082; color: #FFFF; padding: 1px; border-radius: 3px;">
+                    <br> <span style="background-color: #4B0082; color: #FFFF; border-radius: 5px;">
                         Universo Narrativo</span>
                     <br>
-                    <span class="texto-explora""> Online </span>
-                <br>
-                <form target=" _blank" action="https://getinkspired.com/es/universe/elemental-series-1235">
+                    <span class="texto-explora"> Online </span>
+                    <br>
+                    <form target=" _blank" action="https://getinkspired.com/es/universe/elemental-series-1235">
                         <button class="leer">¡Leer Ya!</button>
-                        </form>
-                        <p>
-                            Element
-                            es un universo de historias interconectadas <br> con tramas únicas, <br>
-                            pero personajes compartidos, <br>
-                            que contribuyen a una
-                            narrativa más amplia y completa.
-                        </p>
+                    </form>
+                    <p>
+                        Element
+                        es un universo de historias interconectadas <br> con tramas únicas, <br>
+                        pero personajes compartidos, <br>
+                        que contribuyen a una
+                        narrativa más amplia y completa.
+                    </p>
                 </h1>
             </div>
         </section>
 
-        <section class="cards">
-            <div class="card 1">
-                <img src="/assets/emilymm.png" alt="Portada de novela 1">
-                <h1>Element/Emily</h1>
-                <p>Descripción de novela 1</p>
+        <section id="historias">
+            <div class="cards">
+                <div class="card 1">
+                    <a href="https://getinkspired.com/es/story/91654/esp-elementemily-libro-0">
+                        <div class="card-image" style="--i: url(/assets/emilymm.png)"></div>
+                        <div class="content-card">
+                            <h1>Element/Emily</h1>
+                            <p>Emily, una chica con poderes, lleva una vida normal y apreciada por su familia, pero un
+                                evento
+                                traumático y
+                                una verdad dolorosa la llevan por un camino difícil. El primer relato de Element Project
+                                introduce a Emily
+                                como un personaje importante, así como a los "Psychis" y su poder, la energía oscura.
+                            </p>
+                    </a>
+                </div>
             </div>
             <div class="card 2">
-                <img src="/assets/zero.png" alt="Portada de novela 2">
-                <h1>Element/Zero</h1>
-                <p>Descripción de novela 2</p>
+                <a href="https://getinkspired.com/es/story/156125/esp-elementzero-libro-1/">
+                    <div class="card-image" style="--i: url(/assets/zero.png)"></div>
+                    <div class="content-card">
+                        <h1>Element/Zero</h1>
+                        <p>Philip Mrown presencia la muerte de miles de personas por un incidente
+                            relacionado con la energía
+                            oscura. Descubre que fue causado por una de las tres piedras Eyre, que juntas pueden cumplir
+                            cualquier deseo. Temiendo
+                            una guerra por su poder, Philip decide intervenir para que no caigan en manos equivocadas,
+                            pero pronto se enfrenta a
+                            la pregunta de cuales son sus verdaderos deseos.</p>
+                </a>
             </div>
-            <div class="card 3">
-                <img src="/assets/incitator.png" alt="Portada de novela 3">
-                <h1>Element/Incitator</h1>
-                <p>Descripción de novela 3</p>
+            </div>
+            <a href="https://getinkspired.com/es/story/257947/elementincitator/">
+                <div class="card 3">
+                    <div class="card-image" style="--i: url(/assets/incitator.png)"></div>
+                    <div class="content-card">
+                        <h1>Element/Incitator</h1>
+                        <p>Martin Deeplet es acusado del presunto suicidio inducido de una de sus compañeras y debe
+                            probar
+                            su inocencia para evitar
+                            la deportación. El gobierno y la escuela lanzan un método experimental de investigación en
+                            el
+                            que debe hablar con las
+                            personas cercanas a la víctima durante tres meses. ¿Podrá demostrar su inocencia y qué
+                            secretos
+                            se esconden detrás de
+                            este caso?</p>
+                    </div>
+            </a>
             </div>
             <div class="card 4">
-                <img src="assets/SS.png" alt="Portada de novela 4">
-                <h1>Element/SS</h1>
-                <p>Descripción de novela 4</p>
+                <a href="https://getinkspired.com/es/story/306554/elementss-esp/">
+                    <div class="card-image" style="--i: url(/assets/ss.png)"></div>
+                    <div class="content-card">
+                        <h1>Element/SS</h1>
+                        <p>Historias cortas relacionadas de alguna u otra forma con el universo Element.</p>
+                    </div>
+                </a>
+            </div>
             </div>
         </section>
 
+        <section id="noticias">
+            <div class="noticias-container"></div>
+        </section>
+
+        <section id="contacto">
+            <div class="contacto-container"></div>
+        </section>
 
     </main>
 
