@@ -2,14 +2,19 @@ const cards = document.querySelectorAll('.card');
 
 const cardss = document.querySelectorAll(".proximamente-card");
 
+
+
 cardss.forEach(card => {
+    const h2 = card.querySelector("h2");
+    const hoverText = card.querySelector(".hover-text");
+
     card.addEventListener("mouseenter", () => {
-        card.querySelector("h2").style.display = "none";
-        card.querySelector("p").style.display = "block";
+        h2.style.opacity = "0";
+        hoverText.style.opacity = "1";
     });
 
     card.addEventListener("mouseleave", () => {
-        card.querySelector("h2").style.display = "block";
-        card.querySelector("p").style.display = "none";
+        h2.style.opacity = "1";
+        hoverText.style.opacity = "0";
     });
 });
