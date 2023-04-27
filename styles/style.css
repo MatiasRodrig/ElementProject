@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("/assets/city.jpg");
+    background-image: url("/assets/melbourne.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -29,7 +29,7 @@ header {
 .e-logo {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 
@@ -207,10 +207,105 @@ header {
     text-decoration: none;
 }
 
+#noticias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.noticias-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    width: 75%;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticias-container h1 {
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    align-self: center;
+}
+
+.twitter-container {
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+}
 
 
+#proximamente {
+    width: 75%;
+    margin: 0 auto;
+}
 
+.proximamente-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.proximamente-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(25% - 20px);
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.proximamente-card:hover {
+    transform: scale(1.1);
+}
+
+.proximamente-card:hover::before {
+    opacity: 1;
+}
+
+.proximamente-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.proximamente-card h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.proximamente-card p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
 
 
 .teffy {
