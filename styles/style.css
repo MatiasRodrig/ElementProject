@@ -368,7 +368,7 @@ footer {
 
     .e-logo {
         margin-right: 10px;
-        
+
     }
 
     .botones {
@@ -461,12 +461,42 @@ footer {
         top: 13px;
     }
 
-.botones.mostrar {
-    display: none;
-}
+    .botones.mostrar {
+        display: none;
+    }
 
     .botones {
         display: block;
+    }
+
+    .twitter-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .navbar-container {
+        width: 100%;
+    }
+
+    .hero-container {
+        margin: 0;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .twitter-container {
+        width: 75%;
+    }
+
+    .noticias-container {
+        width: 75vw;
+    }
+
+    .e-logo {
+        width: 10%;
+        font-size: 10px;
     }
 
 }
