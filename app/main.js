@@ -18,3 +18,14 @@ cardss.forEach(card => {
         hoverText.style.opacity = "0";
     });
 });
+
+
+const icons = document.querySelectorAll('.icon');
+icons.forEach(icon => {
+    const botones = document.querySelector('ul.botones');
+    icon.addEventListener('click', (event) => {
+        icon.classList.toggle("open");
+        botones.classList.toggle("mostrar");
+    });
+});
+
